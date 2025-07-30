@@ -6,7 +6,7 @@ mode: rule
 log-level: silent
 external-controller: '0.0.0.0:9090'
 secret: ''
-proxies: [] # 节点列表已清空，请在此处或通过外部订阅导入你的节点
+proxies:# 节点列表已清空，请在此处或通过外部订阅导入你的节点
 
 proxy-groups:
   -
