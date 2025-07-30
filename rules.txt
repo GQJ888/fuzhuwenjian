@@ -14,12 +14,12 @@ dns:
     nameserver: [223.5.5.5, 119.29.29.29, 'https://223.5.5.5/dns-query', 'https://120.53.53.53/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
     proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 'https://223.5.5.5/dns-query', 'https://120.53.53.53/dns-query', 'https://dns.alidns.com/dns-query', 'https://doh.pub/dns-query']
 proxy-groups:
-    - { name: 节点选择, type: select, proxies: [自动选择, DIRECT] }
+    - { name: 🌸节点选择, type: select, proxies: [自动选择, DIRECT] }
     - { name: 自动选择, type: url-test, proxies: [], url: 'http://cp.cloudflare.com', interval: 7200 }
-    - { name: 港台番剧, type: select, proxies: [DIRECT] }
-    - { name: 国际媒体, type: select, proxies: [节点选择, DIRECT] }
-    - { name: 电报代理, type: select, proxies: [节点选择, DIRECT] }
-    - { name: 蒸汽平台, type: select, proxies: [DIRECT, 节点选择] }
+    - { name: 🐵港台番剧, type: select, proxies: [DIRECT] }
+    - { name: 🗣️国际媒体, type: select, proxies: [节点选择, DIRECT] }
+    - { name: 🛬电报代理, type: select, proxies: [节点选择, DIRECT] }
+    - { name: ⚡蒸汽平台, type: select, proxies: [DIRECT, 节点选择] }
 rules:
     - 'DOMAIN,api.sakura-cat.club,DIRECT'
     - 'DOMAIN-SUFFIX,gcld-line.com,节点选择'
