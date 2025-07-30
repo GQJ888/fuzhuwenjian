@@ -6,58 +6,46 @@ mode: rule
 log-level: silent
 external-controller: '0.0.0.0:9090'
 secret: ''
-proxies:# 节点列表已清空，请在此处或通过外部订阅导入你的节点
-
+proxies: []
 proxy-groups:
-  -
-    name: 🔰国外流量
+  - name: 🔰国外流量
     type: select
     proxies:
-      - 🚀直接连接 # 当没有其他节点时，可以先保留直接连接作为备用
-  -
-    name: ⚓️其他流量
+      - 🚀直接连接
+  - name: ⚓️其他流量
     type: select
     proxies:
       - 🔰国外流量
       - 🚀直接连接
-  -
-    name: ✈️Telegram
+  - name: ✈️Telegram
     type: select
     proxies:
       - 🔰国外流量
-  -
-    name: 🎬Youtube
+  - name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
-  -
-    name: 🎬Netflix
+  - name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
-  -
-    name: 🎬哔哩哔哩
+  - name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
-  -
-    name: 🎬国外媒体
+  - name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
-  -
-    name: 🍎苹果服务
+  - name: 🍎苹果服务
     type: select
     proxies:
       - 🚀直接连接
       - 🔰国外流量
-  -
-    name: 🚀直接连接
+  - name: 🚀直接连接
     type: select
     proxies:
       - DIRECT
-
-
 rules:
   - DOMAIN-SUFFIX,smtp,DIRECT
   - DOMAIN-KEYWORD,aria2,DIRECT
