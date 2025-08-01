@@ -55,8 +55,6 @@ dns:
   - https://jp.tiarap.org/dns-query
 profile:
   store-selected: true
-authentication:
-- yizhai:clooyyyi
 proxies:
   
 proxy-groups:
